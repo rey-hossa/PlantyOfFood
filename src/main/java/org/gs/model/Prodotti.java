@@ -1,4 +1,4 @@
-package models;
+package org.gs.model;
 
 public class Prodotti {
 

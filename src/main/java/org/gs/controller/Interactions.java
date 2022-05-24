@@ -1,4 +1,4 @@
-package controller;
+package org.gs.controller;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,10 +8,10 @@ import java.util.Scanner;
 import java.util.concurrent.locks.LockSupport;
 import java.awt.Desktop;
 
-import models.Prodotti;
-import models.Utenti;
-import models.Vendite;
-import services.Service;
+import org.gs.model.Prodotti;
+import org.gs.model.Utenti;
+import org.gs.model.Vendite;
+import org.gs.service.Service;
 
 public class Interactions {
     
@@ -153,40 +153,31 @@ public class Interactions {
         Scanner scanner = new Scanner(System.in);
         Service service = new Service();
 
-        System.out.println("Inserisci l' id");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = listaUtenti.size() + 1;
+        System.out.println("L' id di questo utente sarà: " + id);
 
-        if( id <= listaUtenti.size()){ // check if the entered user id is present in the data
-            System.out.println("Id già esistente inserire un' altro id");
-        }else{
+        System.out.println("Inserisci il nome");
+        String nome = scanner.nextLine();
 
-            System.out.println("Inserisci il nome");
-            String nome = scanner.nextLine();
+        System.out.println("Inserisci il cognome");
+        String cognome = scanner.nextLine();
 
-            System.out.println("Inserisci il cognome");
-            String cognome = scanner.nextLine();
+        System.out.println("Inserisci la data di nascita");
+        String dataDiNascita = scanner.nextLine();
 
-            System.out.println("Inserisci la data di nascita");
-            String dataDiNascita = scanner.nextLine();
+        System.out.println("Inserisci l' indirizzo");
+        String indirizzo = scanner.nextLine();
 
-            System.out.println("Inserisci l' indirizzo");
-            String indirizzo = scanner.nextLine();
+        System.out.println("Inserisci il documento ID");
+        String documentoId = scanner.nextLine();
 
-            System.out.println("Inserisci il documento ID");
-            String documentoId = scanner.nextLine();
+        Utenti utente = new Utenti(id, nome, cognome, dataDiNascita, indirizzo, documentoId);
 
-            Utenti utente = new Utenti(id, nome, cognome, dataDiNascita, indirizzo, documentoId);
+        listaUtenti.add(utente);
 
-            listaUtenti.add(utente);
+        System.out.println("Utente inserito corretamente.");
 
-            System.out.println("Utente inserito corretamente.");
-
-            //service.getListaUtenti(listaUtenti);
-
-        }
-
-        
+        //service.getListaUtenti(listaUtenti); 
 
     }
 

@@ -1,4 +1,4 @@
-package services;
+package org.gs.service;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 import javax.sound.sampled.SourceDataLine;
 
-import models.Prodotti;
-import models.Utenti;
-import models.Vendite;
+import org.gs.model.Prodotti;
+import org.gs.model.Utenti;
+import org.gs.model.Vendite;
 
 
 public class Service {
