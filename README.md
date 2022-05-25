@@ -1,6 +1,6 @@
 # Planty Of Food Project
 
-This project is a crypto site, so with this site you can keep track of your favorite cryptocurrencies.
+This project is a simpkle application which simulates the sales management of an ecommerce.
 
 ## Getting Started
 
@@ -27,4 +27,4 @@ The usage is very simple, run the project and insert the comand you want to exec
 ## Contact
 Email: rey.hossa.rh@gmail.com
 
-Project link: https://github.com/rey-hossa/CryptoCoin.git
+Project link: https://github.com/rey-hossa/PlantyOfFood.git
