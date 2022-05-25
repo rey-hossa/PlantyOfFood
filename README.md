@@ -4,7 +4,7 @@ This project is a simpkle application which simulates the sales management of an
 
 ## Getting Started
 
-To Starting using this Application, first you need to have maven installed on your pc, then download the project and open it in your favorite IDE, if you want to compile the project open the terminal and run this command "mvn compile", to create a jar file run this command "mvn clear compile package", and the jar file will be created automatically in the target folder.
+To Starting using this Application, first you need to have maven installed on your pc, then download the project and open it in your favorite IDE (Eclipse, IntelliJ, Visual Studio Code ...), you can run it clicking on run or if you want to compile the project open the terminal and run this command "mvn compile", to create a jar file run this command "mvn clear compile package", and the jar file will be created automatically in the target folder.
 
 ## Language Used
 
